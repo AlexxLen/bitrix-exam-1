@@ -51,11 +51,30 @@ require_once __DIR__ . '/boot.php';
 	<header id="header" class="header d-flex align-items-center">
 		<div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-			<a href="#" class="logo d-flex align-items-center">
+			<a href="<?=SITE_DIR?>" class="logo d-flex align-items-center">
 				<h1 class="sitename"><?=Loc::getMessage('HEADER_TITLE');?></h1>
 			</a>
 
-			<nav id="navmenu" class="navmenu">
+			<?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"horizontal_multilevel", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "3",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N",
+		"COMPONENT_TEMPLATE" => "horizontal_multilevel"
+	),
+	false
+);?>
+			<!-- <nav id="navmenu" class="navmenu">
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Пункт 1</a></li>
@@ -84,7 +103,7 @@ require_once __DIR__ . '/boot.php';
 					<li><a href="#">Пункт 6</a></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-			</nav>
+			</nav> -->
 
 		</div>
 	</header>

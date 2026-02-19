@@ -16,7 +16,7 @@ $isMainPage = $request->getRequestedPageDirectory() === '/';
 <!-- Page Title -->
 <div class="page-title dark-background">
     <div class="container position-relative">
-        <h1>Заголовок страницы</h1>
+        <h1><?=$APPLICATION->showTitle(false);?></h1>
         <p><?=$APPLICATION->showProperty('page_text_under_title')?></p>
         <nav class="breadcrumbs">
             <ol>
