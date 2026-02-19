@@ -1,0 +1,5 @@
+<?
+$arTemplate = array (
+  'NAME' => 'Экзамен N1 - TYPE1 - dev',
+);
+?>
