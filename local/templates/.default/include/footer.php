@@ -1,22 +1,19 @@
 <?php
-
 B_PROLOG_INCLUDED === true || die();
-
 ?>
 
 </main>
 
 	<footer id="footer" class="footer dark-background">
 		
-	<?$APPLICATION->IncludeComponent(
-		"bitrix:search.form", 
-		".default", 
-		array(
-			"PAGE" => "#SITE_DIR#search/",
-			"USE_SUGGEST" => "N",
-		),
-		false
-	);?>
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:search.form", 
+			"",
+			array(
+				"PAGE" => "#SITE_DIR#search/",
+				"USE_SUGGEST" => "N",
+			),
+		);?>
 
 		<div class="container footer-top">
 			<div class="row gy-4">

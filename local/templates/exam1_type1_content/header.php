@@ -13,24 +13,25 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/local/templates/.default/include/head
     <div class="row gy-5">
 
         <div class="col-lg-4">
-
-            <?$APPLICATION->IncludeComponent(
-                "bitrix:menu",
-                "left",
-                Array(
-                    "ALLOW_MULTI_SELECT" => "N",
-                    "CHILD_MENU_TYPE" => "",
-                    "DELAY" => "N",
-                    "MAX_LEVEL" => "1",
-                    "MENU_CACHE_GET_VARS" => array(0=>"",),
-                    "MENU_CACHE_TIME" => "3600",
-                    "MENU_CACHE_TYPE" => "A",
-                    "MENU_CACHE_USE_GROUPS" => "Y",
-                    "MENU_THEME" => "site",
-                    "ROOT_MENU_TYPE" => "left",
-                    "USE_EXT" => "N"
-                )
-            );?>
+            <div class="service-box">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "left",
+                    Array(
+                        "ALLOW_MULTI_SELECT" => "N",
+                        "CHILD_MENU_TYPE" => "left",
+                        "DELAY" => "N",
+                        "MAX_LEVEL" => "1",
+                        "MENU_CACHE_GET_VARS" => array(""),
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_TYPE" => "Y",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "ROOT_MENU_TYPE" => "left",
+                        "USE_EXT" => "Y",
+                        "CACHE_SELECTED_ITEMS" => "Y"
+                    )
+                );?>
+            </div>
 
             <div class="service-box">
                 <h4>Материалы</h4>
@@ -63,7 +64,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/local/templates/.default/include/head
                             "bitrix:breadcrumb",
                             "bc_content",
                             Array(
-                                "COMPONENT_TEMPLATE" => ".default",
+                                "COMPONENT_TEMPLATE" => "",
                                 "PATH" => "",
                                 "SITE_ID" => "s1",
                                 "START_FROM" => "0"

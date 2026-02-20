@@ -2,12 +2,7 @@
 
 B_PROLOG_INCLUDED === true || die();
 
-use Bitrix\Main\Application;
-
 require_once $_SERVER["DOCUMENT_ROOT"] . "/local/templates/.default/include/header.php";
-
-$request = Application::getInstance()->getContext()->getRequest();
-$isMainPage = $request->getRequestedPageDirectory() === '/';
 
 ?>
 
@@ -25,7 +20,6 @@ $isMainPage = $request->getRequestedPageDirectory() === '/';
                     "PATH" => "",
                     "SITE_ID" => "s1",
                     "START_FROM" => "0",
-                    "COMPONENT_TEMPLATE" => "bc_dev"
                 ),
                 false
             );?>

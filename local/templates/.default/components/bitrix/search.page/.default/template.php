@@ -27,7 +27,7 @@
 
 		<div class="row gy-4">
 
-			<?php if(count($arResult["SEARCH"]) >0 ): ?>
+			<?php if (count($arResult["SEARCH"]) > 0 ): ?>
 
 				<?php foreach ($arResult["SEARCH"] as $arItem): ?>
 				<div class="col-lg-4">

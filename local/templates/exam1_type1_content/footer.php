@@ -8,7 +8,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/local/templates/.default/include/foot
 
 </div>
 
-				</div>
+		</div>
 
-			</div>
-		</section><!-- End Conten Page Section -->
+	</div>
+</section><!-- End Conten Page Section -->
