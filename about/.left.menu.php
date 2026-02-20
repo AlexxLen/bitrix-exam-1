@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"История", 
+		"/about/history/", 
+		Array(), 
+		Array("menu_ico"=>"bi-bookshelf"), 
+		"" 
+	),
+	Array(
+		"Команда", 
+		"/about/team/", 
+		Array(), 
+		Array("menu_ico"=>"bi-people"), 
+		"" 
+	),
+	Array(
+		"Присоединиться", 
+		"/about/join/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

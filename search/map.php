@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("Карта сайта");
 
-$APPLICATION->IncludeComponent("bitrix:main.map", ".default", array(
+$APPLICATION->IncludeComponent("bitrix:main.map", "", array(
 	"CACHE_TYPE" => "A",
 	"CACHE_TIME" => "36000000",
 	"SET_TITLE" => "Y",

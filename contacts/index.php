@@ -1,57 +1,78 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("page_text_under_title", "Свяжитесь с нами — мы всегда готовы помочь и ответить на ваши вопросы.");
 $APPLICATION->SetTitle("Контакты");
 ?>
-<p>Обратитесь к нашим специалистам и получите профессиональную консультацию по вопросам создания и покупки мебели (от дизайна, разработки технического задания до доставки мебели к Вам домой).</p>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
 
-<p>Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в нашем офисе. Будем рады помочь вам и ответить на все ваши вопросы. </p>
+<div class="container">
 
-<h2>Телефоны</h2>
+  <div class="row gy-4">
+    <div class="col-lg-6 ">
+      <div class="row gy-4">
 
-<ul> 
-	<li>Телефон/факс:
-		<ul> 
-			<li><b>(495) 212-85-06</b></li>
-		</ul>
-	</li>
- 
-	<li>Телефоны:
-		<ul> 
-			<li><b>(495) 212-85-07</b></li>
-			<li><b>(495) 212-85-08</b></li>
-		</ul>
-	</li>
-</ul>
+        <div class="col-lg-12">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center" >
+            <i class="bi bi-geo-alt"></i>
+            <h3>Адрес</h3>
+            <p>111111 Москва, улица, номер, офис</p>
+          </div>
+        </div><!-- End Info Item -->
 
-<h2>Email</h2>
+        <div class="col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-telephone"></i>
+            <h3>Телефон</h3>
+            <p>+7 000 000 00 00</p>
+          </div>
+        </div><!-- End Info Item -->
 
-<ul> 
-  <li><a href="mailto:info@example.ru">info@example.ru</a> &mdash; общие вопросы</li>
-  <li><a href="mailto:sales@example.ru">sales@example.ru</a> &mdash; приобретение продукции</li>
-  <li><a href="mailto:marketing@example.ru">marketing@example.ru</a> &mdash; маркетинг/мероприятия/PR</li>
-</ul>
+        <div class="col-md-6">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-envelope"></i>
+            <h3>Email</h3>
+            <p>contact@company.ru</p>
+          </div>
+        </div><!-- End Info Item -->
 
-<h2>Офис в Москве</h2>
-<p><?$APPLICATION->IncludeComponent("bitrix:map.google.view", ".default", array(
-	"KEY" => "ABQIAAAAOSNukcWVjXaGbDo6npRDcxS1yLxjXbTnpHav15fICwCqFS-qhhSby0EyD6rK_qL4vuBSKpeCz5cOjw",
-	"INIT_MAP_TYPE" => "NORMAL",
-	"MAP_DATA" => "a:3:{s:10:\"google_lat\";s:7:\"55.7383\";s:10:\"google_lon\";s:7:\"37.5946\";s:12:\"google_scale\";i:13;}",
-	"MAP_WIDTH" => "600",
-	"MAP_HEIGHT" => "500",
-	"CONTROLS" => array(
-		0 => "LARGE_MAP_CONTROL",
-		1 => "MINIMAP",
-		2 => "HTYPECONTROL",
-		3 => "SCALELINE",
-	),
-	"OPTIONS" => array(
-		0 => "ENABLE_SCROLL_ZOOM",
-		1 => "ENABLE_DBLCLICK_ZOOM",
-		2 => "ENABLE_DRAGGING",
-	),
-	"MAP_ID" => ""
-	),
-	false
-);?></p>
+      </div>
+    </div>
 
+    <div class="col-lg-6">
+      <form action="#" method="post" class="php-email-form">
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Имя" required="">
+          </div>
+
+          <div class="col-md-6 ">
+            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+          </div>
+
+          <div class="col-md-12">
+            <input type="text" class="form-control" name="subject" placeholder="Тема" required="">
+          </div>
+
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="4" placeholder="Сообщение" required=""></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <div class="loading">Отправка</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Сообщение отправлено, спасибо!</div>
+
+            <button type="submit">Отправить</button>
+          </div>
+
+        </div>
+      </form>
+    </div><!-- End Contact Form -->
+
+  </div>
+
+</div>
+</section><!-- /Contact Section -->
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
