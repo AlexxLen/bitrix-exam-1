@@ -14,15 +14,23 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/local/templates/.default/include/head
 
         <div class="col-lg-4">
 
-            <div class="service-box">
-                <div class="services-list">
-                    <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Пункт меню 1</span></a>
-                    <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Пункт меню 2 -
-                            активный</span></a>
-                    <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Пункт меню 3</span></a>
-                    <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Пункт меню 4</span></a>
-                </div>
-            </div>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:menu",
+                "left",
+                Array(
+                    "ALLOW_MULTI_SELECT" => "N",
+                    "CHILD_MENU_TYPE" => "",
+                    "DELAY" => "N",
+                    "MAX_LEVEL" => "1",
+                    "MENU_CACHE_GET_VARS" => array(0=>"",),
+                    "MENU_CACHE_TIME" => "3600",
+                    "MENU_CACHE_TYPE" => "A",
+                    "MENU_CACHE_USE_GROUPS" => "Y",
+                    "MENU_THEME" => "site",
+                    "ROOT_MENU_TYPE" => "left",
+                    "USE_EXT" => "N"
+                )
+            );?>
 
             <div class="service-box">
                 <h4>Материалы</h4>
