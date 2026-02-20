@@ -20,7 +20,7 @@ use Bitrix\Main\Localization\Loc;
 		<div class="row justify-content-center text-center">
 			<div class="col-lg-6">
 				<h4><?=Loc::getMessage('SEARCH_FORM_TITLE');?></h4>
-				<form action="#" method="<?=$arResult["FORM_ACTION"]?>">
+				<form action="<?=$arResult["FORM_ACTION"]?>">
 					<div class="search-form">
 						<input class="input-seach" type="text" name="q">
 						<input class="button-seach" name="s" type="submit" value="<?=Loc::getMessage('SEARCH_FORM_BUTTON');?>">
