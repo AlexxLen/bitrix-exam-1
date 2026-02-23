@@ -1,4 +1,10 @@
 <?
+$PERM["statistic_na"]["2"]="D";
+$PERM["statistic_na"]["3"]="D";
+$PERM["statistic_na"]["4"]="D";
+$PERM["statistic_na"]["7"]="R";
+$PERM["statistic_na"]["6"]="D";
+$PERM["statistic_na"]["5"]="D";
 $PERM["about"]["6"]="W";
 $PERM["/"]["*"]="R";
 $PERM["search"]["5"]="W";
