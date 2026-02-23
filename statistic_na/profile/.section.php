@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Профиль";
-$arDirProperties = Array(
-
+$arDirProperties = array(
+   "page_css_class" => "profile"
 );
 ?>

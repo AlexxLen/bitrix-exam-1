@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Дашборд";
-$arDirProperties = Array(
-
+$arDirProperties = array(
+   "page_css_class" => "dashboard"
 );
 ?>
