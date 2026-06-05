@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Портфолио");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "Y",
+		"CACHE_TYPE" => "A",
 		"COMPATIBLE_MODE" => "N",
 		"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
 		"DETAIL_BACKGROUND_IMAGE" => "-",

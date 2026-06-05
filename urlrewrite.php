@@ -8,7 +8,7 @@ $arUrlRewrite=array (
     'PATH' => '/statistic_na/main/table/index.php',
     'SORT' => 100,
   ),
-  3 => 
+  5 => 
   array (
     'CONDITION' => '#^/portfolio/#',
     'RULE' => '',
